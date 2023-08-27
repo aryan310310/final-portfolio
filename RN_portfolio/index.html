@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryan-Devloper's website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        position: sticky;
+        background-color: rgb(18, 18, 62);
+    
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.08rem;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+        margin-top: -120px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 120px 0;
+        margin-bottom: -10px;
+       
+      }
+      .firstSection > div {
+        width: 30%;
+        margin-top: -30px;
+      }
+      
+      .leftSection {
+        font-size: 3rem;
+        margin: 60px 0;
+      }
+      .leftSection .btn{
+        padding: 12px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 17px;
+        cursor: pointer;
+      }
+      .leftSection .buttons{
+        padding: 50px 0;
+       /* padding-top: 50px; */
+      }
+
+      .rightSection img {
+        width: 80%;
+        margin-top: -150px;
+        border-radius: 50%;
+        height: 300px;
+      }
+      .purple {
+        color: rgb(157, 113, 199);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(157, 113, 199);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+        margin-top: 50px;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 82vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 140px;
+      }
+      .image-top {
+        width: 40px;
+        height: 36px;
+        position: relative;
+        top: -48px;
+        left: -20px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 140px;
+        margin-left: -50px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        width: 150px;
+        color: gray;
+        font-size:10px ;
+        margin-left: -50px;
+      }
+      footer{
+        background-color:#0e0e1a;
+        height: 150x;
+        
+      }
+      .footer-first{
+                margin-left: -300px;
+      }
+      .footer{
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul{
+        list-style: none;
+      }
+      .footer > div{
+        width: 223px;
+      }
+      footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+    #contact{
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: -30px;
+    margin-left: 90px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    margin-top: 10px;
+  
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(216, 210, 210);
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Aryan's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="Home">
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Aryan </span>and I am a passionate
+          <!-- <div>and I am a passionate</div> -->
+          <span id="element"></span>
+          <div class ="buttons">
+            <button class="btn" onclick="location.href='resume.pdf'"> Resume</button>
+            <button class="btn" onclick="location.href='https://github.com/aryan310310'">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection"><img src="pic1.jpg" /></div>
+      </section>
+    </section>
+      <hr />
+      <section class="secondSection">
+        <section id="About">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="html.png" alt="" />
+            <div class="vertical-title">HTML Developer (2021)</div>
+            <div class="vertical-desc">Basic scripting language used by web browsers to render pages on the world wide web</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="react.png" alt="" />
+            <div class="vertical-title">React Developer (2022-23)</div>
+            <div class="vertical-desc">Library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time offering a simpler programming model and better performance.</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="crypto.png" alt="" />
+            <div class="vertical-title"> Crypto Enthusiast (2021-23)</div>
+            <div class="vertical-desc">Proponent of cryptocurrencies and decentralized finance (DeFi),strongly believe in the decentralized blockchain architecture and feel that it solves many problems both financially and politically.</div>
+          </div> 
+          <div class="vertical">
+            <img class="image-top" src="stackoverflow.png" alt="" />
+            <div class="vertical-title"> stackoverflow website buildup(2022-23)</div>
+            <div class="vertical-desc">Question-and-answer website that unites computer programmers worldwide.</div>
+          </div>        
+        </div>
+      </section>
+      </section>
+
+      <body>
+        <!-- <div id ="contact">
+          <div class="row">
+            <dv class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>contact@example.con</p>
+              <p>97493264739</p>
+              <div class="social-icons">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+
+              </div>
+            </dv>
+          </div>
+        </div> -->
+        <section id="Contact">
+      <section id="contact">
+        <h1 class="headings">CONTACT ME</h1>
+        <form name="submit-to-google-sheet" class="form" >
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
+  </section>
+  </body>
+    </main>
+
+    <footer>
+      <section id="Projects">
+      <div class="footer">
+        <div class="footer-first">
+         <h3>Aryan's Portfolio Projects</h3>
+      </div>
+      <div class="footer-second">
+      <ul>
+        <a href="https://stack-overflow-aryan.netlify.app/">Stack-overflow-clone project</a>
+          <br><br>
+        <a href="https://temp-convrt.netlify.app/">Temperature Convert project</a>
+        <br><br>
+
+        <a href="https://simple-tokens-dashboard.netlify.app/">Simple Meme-tokens dashboard </a>
+        
+      </ul>
+     </div>
+     </div>
+    </section>
+    <div class="footer-rights">
+      Copyright &#169; www.aryansportfolio.com | All rights reserved
+    </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "React-developer"],
+        typeSpeed: 50,
+      });
+    </script>
+ 
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxgl5fgp8UYb-nv7IGDY91Uxhu8-bvUEsuNkbmIoLa5je28888OmvJianaUZZ5e6JZD/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
